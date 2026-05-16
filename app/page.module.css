@@ -1,0 +1,99 @@
+.hero {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: var(--primary-white);
+  padding: 100px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.heroContent {
+  max-width: 600px;
+}
+
+.heroContent h1 {
+  color: var(--accent-gold);
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.heroContent p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--light-gray);
+}
+
+.featured {
+  padding: 80px 20px;
+  background-color: var(--primary-white);
+}
+
+.featured h2 {
+  margin-bottom: 3rem;
+}
+
+.whySection {
+  padding: 80px 20px;
+  background-color: var(--light-gray);
+}
+
+.whySection h2 {
+  margin-bottom: 3rem;
+}
+
+.featureCard {
+  background: var(--primary-white);
+  padding: 30px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.featureCard h3 {
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  background: var(--primary-black);
+  color: var(--primary-white);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--light-gray);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+    min-height: 400px;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .featured,
+  .whySection,
+  .cta {
+    padding: 60px 20px;
+  }
+}
